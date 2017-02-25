@@ -1,444 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Ashish Surana</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-  <meta name="keywords" content="Student, Ashish Surana, Jaipur, Arya College of Engineering and I.T, 
+    <title>Ashish Surana</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="Student, Ashish Surana, Jaipur, Arya College of Engineering and I.T, 
   Arya College, Ashish, Surana, Gulabpura, Android Developer, Arya Alumni App">
-
-  <meta name="description" content="Portfolio of Ashish Surana">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-
-	<!-- fb tags. -->
-
-
+    <meta name="description" content="Portfolio of Ashish Surana">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <!-- fb tags. -->
     <meta property="og:url" content="http://ashishsurana.in/" />
     <meta property="og:type" content="Portfolio | Ashish Surana" />
-    <meta property="og:title" content="Ashish Surana | Portfolio"/>
+    <meta property="og:title" content="Ashish Surana | Portfolio" />
     <meta property="og:description" content="A final year Computer Science Engineering Student, an Android Developer and a geek who loves learning new technologies and their deployment">
     <meta property="og:image" content="./assets/pic.png">
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#home2, #home1").click(function() {
+            $(".project, .resume, .contact, .skills").hide();
+            $('.nav.navbar-nav > li').removeClass('active');
+            // $(".home").show();
+            $(".home").fadeIn();
+            $("#home2").addClass('active');
+        });
+        $(".skills, .project, .resume, .contact, #temp").hide();
+        $("#project").click(function() {
+            $(".home, .resume, .contact, .skills").hide();
+            // $(".project").show();
+            $(".project").fadeIn();
+        });
+        $("#skills").click(function() {
+            $(".home, .project, .resume, .contact").hide();
+            // $(".skills").show();
+            $(".skills").fadeIn();
+        });
 
+        $("#resume").click(function() {
+            $(".project, .contact, .home, .skills").hide();
+            // $(".resume").show();
+            $(".resume").fadeIn();
+            $(".resume").addClass('active');
+        });
+        $("#contact").click(function() {
+            $(".project, .resume, .home, .skills").hide();
+            // $(".contact").show();
+            $(".contact").fadeIn();
+        });
+        $('.nav.navbar-nav > li').hover(function() {
+            $('.nav.navbar-nav > li').removeClass('active');
+            $(this).addClass('active');
+        }, function() {
+            $(this).removeClass('active');
+        });
+    });
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-
-	<link rel="shortcut icon" href="./assets/favicon.ico"/>
-	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="./main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-  <script type="text/javascript">
-  	$(document).ready(function(){
-    	$("#home2, #home1").click(function(){
-       		$(".project, .resume, .contact, .skills").hide();
-       		$('.nav.navbar-nav > li').removeClass('active');
-        	// $(".home").show();
-        	$(".home").fadeIn();
-        	$("#home2").addClass('active');
-    	});
-    	$(".skills, .project, .resume, .contact, #temp").hide();
-    	$("#project").click(function(){
-        	$(".home, .resume, .contact, .skills").hide();
-        	// $(".project").show();
-        	$(".project").fadeIn();
-    	});
-    	$("#skills").click(function(){
-        	$(".home, .project, .resume, .contact").hide();
-        	// $(".skills").show();
-        	$(".skills").fadeIn();
-    	});
-
-    	$("#resume").click(function(){
-       		$(".project, .contact, .home, .skills").hide();
-        	// $(".resume").show();
-        	$(".resume").fadeIn();
-        	$(".resume").addClass('active');
-    	});
-    	$("#contact").click(function(){
-       		$(".project, .resume, .home, .skills").hide();
-        	// $(".contact").show();
-        	$(".contact").fadeIn();
-    	});
-		$('.nav.navbar-nav > li').hover(function(){
-        $('.nav.navbar-nav > li').removeClass('active');
-        $(this).addClass('active');}, function(){
-        	$(this).removeClass('active');
-   		});
-	});
-  </script>
-  <script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-71736143-1', 'auto');
-	  ga('send', 'pageview');
-</script>
+    ga('create', 'UA-71736143-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 </head>
+
 <body>
-
-
-<nav class = "navbar navbar-default" role = "navigation">
-
-   <div class = "navbar-header">
-      <button type = "button" class = "navbar-toggle"
-         data-toggle = "collapse" data-target = "#example-navbar-collapse">
-         <span class = "sr-only"></span>
-         <span class = "icon-bar"></span>
-         <span class = "icon-bar"></span>
-         <span class = "icon-bar"></span>
-      </button>
-
-      <a class = "navbar-brand" href = "#" id="home1">ASHISH SURANA</a>
-   </div>
-
-
-   <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
-    <ul class="nav navbar-nav navbar-right hidden-xs">
-    	<li><a href="https://github.com/ashishsurana/ashishsurana.github.io" target="_blank"><i class="fa fa-github-alt  "></i></a></li>
-    </ul>
-    <ul class = "nav navbar-nav">
-        <li class="active"><a href="#" id="home2">ABOUT</a></li>
-        <li><a href="#" id="skills">SKILLS</a></li>
-        <li><a href="#" id="project">PROJECTS</a></li>
-        <li><a href="#" id="resume">RESUME</a></li>
-        <li><a href="#" id="contact">CONTACT</a></li>
-    </ul>
-   </div>
-</nav>
-
-
-<div class="container">
-	<div class="home">
-		<div class="row	">
-			<div class="col-md-3 col-md-offset-2  col-sm-4  col-xs-12 content " >
-				<img src="./assets/pic.png" class="profilepic img-thumbnail">
-			</div>
-
-			<div class="col-md-5 col-sm-8  col-xs-12 content" >
-				<p>I'm  a final year Computer Science Engineering student from <a href="http://www.aryacollege.in/">Arya College of Engineering & IT</a>. The thirst of exploring things and curiosity defines me  well.</p>
-				<p> I'm a geek who loves learning new technologies and their deployment. I'm a Firefox Student Ambassador, Open Source Enthusiast and a part of open source communities like Mozilla Community Rajasthan, OpenMoz, Google Student Club and delivered several tech talks and workshops. My hobbies are traveling and Photography.</p>
-				<p>I maintain this page as a documentation of my work.</p>
-			</div>
-		</div>
-	</div>
-	<div class="skills">
-		<h3 class="heading">Skills</h3>
-		<hr>
-		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
-			<h3 class="heading">Programming Languages</h3>
-			<hr>
-			<img src="./assets/c.png" class="col-lg-2 img-circle" title="C">
-			<img src="./assets/cpp.png" class="col-lg-2 img-circle">
-			<img src="./assets/java1.png" class="col-lg-2 img-circle">
-			<img src="./assets/html.png" class="col-lg-2 img-circle">
-			<img src="./assets/css.png" class="col-lg-2 img-circle">
-			<img src="./assets/js.png" class="col-lg-2 img-circle">
-		</div>
-
-		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
-			<h3 class="heading">Other</h3>
-			<hr>
-			<img src="./assets/git.png" class="col-lg-2 img-circle"  >
-			<img src="./assets/android.png" class="col-lg-2 img-circle">
-			<img src="./assets/mysql.png" class="col-lg-2 img-circle" title="mysql">
-			<img src="./assets/bootstrap.png" class="col-lg-2 img-circle" title="Bootstrap">
-			<img src="./assets/androids.png" class="col-lg-2 img-circle">
-			<img src="./assets/eclipse.png" class="col-lg-2 img-circle">
-		</div>
-		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
-			<h3 class="heading">Certifications</h3>
-			<hr>
-			<img src="./assets/rhce.png" class="col-lg-2 " >
-			<img src="./assets/rhcsa.png" class="col-lg-2 " >
-			<img src="./assets/cad.png" class="col-lg-2" title="AutoCad">
-		</div>
-		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
-			<h3 class="heading">Operating Systems</h3>
-			<hr>
-			<img src="./assets/ubuntu.png" class="col-lg-2 ">
-			<img src="./assets/redhat.png" class="col-lg-2">
-			<img src="./assets/windows.png" class="col-lg-2">
-		</div>
-		<!-- <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
-			<h4 class="heading"><b>Above all, I'm a Quick Learner, Dedicated, Hardworking student.</b></h4>
-		</div> -->
-	</div>
-	<div class="project">
-		<h3 class="heading">Projects</h3>
-		<hr>
-		<div class="row">
-		
-		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
-				<!-- <img src="./assets/android.svg" style="float:right;" > -->
-				<a href='https://play.google.com/store/apps/details?id=in.surana.ashish.alucon&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' style="height: 50px;with : 100px; float:right;"  /></a>
-				<div class="col-lg-3 col-md-4 col-sm-3 " >
-					<img src="./assets/app-logo.png" class="img-responsive img-thumbnail">
-				</div>
-
-<!-- 				<div class="col-lg-3 col-md-4 col-sm-3 " >
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" id="home1">ASHISH SURANA</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li><a href="https://github.com/ashishsurana/ashishsurana.github.io" target="_blank"><i class="fa fa-github-alt  "></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#" id="home2">ABOUT</a></li>
+                <li><a href="#" id="skills">SKILLS</a></li>
+                <li><a href="#" id="project">PROJECTS</a></li>
+                <li><a href="#" id="resume">RESUME</a></li>
+                <li><a href="#" id="contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="home">
+            <div class="row	">
+                <div class="col-md-3 col-md-offset-2  col-sm-4  col-xs-12 content ">
+                    <img src="./assets/pic.png" class="profilepic img-thumbnail">
+                </div>
+                <div class="col-md-5 col-sm-8  col-xs-12 content">
+                    <p>I'm a final year Computer Science Engineering student from <a href="http://www.aryacollege.in/">Arya College of Engineering & IT</a>. The thirst of exploring things and curiosity defines me well.</p>
+                    <p> I'm a geek who loves learning new technologies and their deployment. I'm a Firefox Student Ambassador, Open Source Enthusiast and a part of open source communities like Mozilla Community Rajasthan, OpenMoz, Google Student Club and delivered several tech talks and workshops. My hobbies are traveling and Photography.</p>
+                    <p>I maintain this page as a documentation of my work.</p>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h3 class="heading">Skills</h3>
+            <hr>
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                <h3 class="heading">Programming Languages</h3>
+                <hr>
+                <img src="./assets/java.png" class="col-lg-2 skillImages" >
+                <img src="./assets/html.png" class="col-lg-2 skillImages">
+                <img src="./assets/css.png" class="col-lg-2 skillImages">
+                <img src="./assets/js.png" class="col-lg-2 skillImages">
+                <img src="./assets/python.png" class="col-lg-2 skillImages">
+            </div>
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
+                <h3 class="heading">Other</h3>
+                <hr>
+                <img src="./assets/git.png" class="col-lg-2 skillImages">
+                <img src="./assets/android.png" class="col-lg-2 skillImages" title=" Android ">
+                <img src="./assets/mysql.png" class="col-lg-2 skillImages" title=" Mysql ">
+                <img src="./assets/bootstrap.png" class="col-lg-2 skillImages" title=" Bootstrap ">
+                <img src="./assets/androids.png" class="col-lg-2 skillImages">
+                <img src="./assets/node.png" class="col-lg-2 skillImages">
+                <img src="./assets/mongodb.png" class="col-lg-2 skillImages" title=" MongoDB " >
+            </div>
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
+                <h3 class="heading">Certifications</h3>
+                <hr>
+                <img src="./assets/rhce.png" class="col-lg-2 ">
+                <img src="./assets/rhcsa.png" class="col-lg-2 ">
+                <img src="./assets/cad.png" class="col-lg-2" title="AutoCad">
+            </div>
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
+                <h3 class="heading">Operating Systems</h3>
+                <hr>
+                <img src="./assets/ubuntu.png" class="col-lg-2 ">
+                <img src="./assets/redhat.png" class="col-lg-2">
+                <img src="./assets/windows.png" class="col-lg-2">
+            </div>
+        </div>
+        <div class="project">
+            <h3 class="heading">Projects</h3>
+            <hr>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+                    <img src="./assets/android.svg" style="float:right;">
+                    <div class="col-lg-3 col-md-4 col-sm-3 ">
+                        <img src="./assets/wisflux.png" class="img-responsive img-thumbnail ">
+                    </div>
+                    <h3><a href="http://parkzap.com/">Wisflux Edtech Labs	, Gurgaon</a><small> Internship</small></h3>
+                    <hr>
+                    <p>Working as a full stack developer</p>
+                    <h5><b>Technology Used</b> : Node js, graphql, typescript</h5>
+                    <div class="box">
+                        <!-- <span class="fa-stack fa-lg" >
+						<a href="https://github.com/ashishsurana/Alumni" target="_blank">
+			  				<i class="fa fa-github fa-stack-1x"></i>
+						</a>
+					</span> -->
+                        <!-- <span class="fa-stack fa-lg" >
+						<a href="https://drive.google.com/open?id=0B1VhjwFcJ03cWk5LMER4YnF5Z2M" target="_blank">
+		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
+						</a>
+					</span> -->
+                    </div>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+                    <!-- <img src="./assets/android.svg" style="float:right;" > -->
+                    <a href='https://play.google.com/store/apps/details?id=in.surana.ashish.alucon&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' style="height: 50px;with : 100px; float:right;" /></a>
+                    <div class="col-lg-3 col-md-4 col-sm-3 ">
+                        <img src="./assets/app-logo.png" class="img-responsive img-thumbnail">
+                    </div>
+                    <!-- 				<div class="col-lg-3 col-md-4 col-sm-3 " >
 					<img src="./assets/parkzap.jpg" class="img-responsive img-thumbnail">
 				</div>
 
  -->
-					<h3><a href="https://play.google.com/store/apps/details?id=in.surana.ashish.alucon">Arya Alucon</a><small> August - November 2016</small></h3>
-					<hr>
-					<p>A Native Android Application made for the College, dedicated to the Alumni, where they can see their friends and  get to know about the recent college activities.</p>
-					<h5><b>Technology Used</b> : Android, Sqlite , nodejs + mongodb</h5>
-					
-				<div class="box">
-					<span class="fa-stack fa-lg" >
+                    <h3><a href="https://play.google.com/store/apps/details?id=in.surana.ashish.alucon">Arya Alucon</a><small> August - November 2016</small></h3>
+                    <hr>
+                    <p>A Native Android Application made for the College, dedicated to the Alumni, where they can see their friends and get to know about the recent college activities.</p>
+                    <h5><b>Technology Used</b> : Android, Sqlite , nodejs + mongodb</h5>
+                    <div class="box">
+                        <span class="fa-stack fa-lg">
 						<a href="https://github.com/ashishsurana/Alumni" target="_blank">
 			  				<i class="fa fa-github fa-stack-1x"></i>
 						</a>
 					</span>
-					<span class="fa-stack fa-lg" >
+                        <span class="fa-stack fa-lg">
 						<a href="https://drive.google.com/open?id=0B1VhjwFcJ03cWk5LMER4YnF5Z2M" target="_blank">
 		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
 						</a>
 					</span>
-
-				</div>
-
-			</div>
-
-		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
-				<img src="./assets/android.svg" style="float:right;">
-				<div class="col-lg-3 col-md-4 col-sm-3 " >
-					<img src="./assets/parkzap.jpg" class="img-responsive img-thumbnail ">
-				</div>
-
-					<h3><a href="http://parkzap.com/">Parkzap Labs, Gurgaon</a><small> Internship</small></h3>
-					<hr>
-					<p>I contributed to Application made for the Parkzap Labs for smart parking solutions. I did the integration of NFC cards, RFID reader, custom hardware connection with android, designing advance UI for controlling the ioio board, cloud communication through efficient libraries</p>
-					<h5><b>Technology Used</b> : JAVA, Sqlite, Ioio Board</h5>
-				<div class="box">
-					<!-- <span class="fa-stack fa-lg" >
+                    </div>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+                    <img src="./assets/android.svg" style="float:right;">
+                    <div class="col-lg-3 col-md-4 col-sm-3 ">
+                        <img src="./assets/parkzap.jpg" class="img-responsive img-thumbnail ">
+                    </div>
+                    <h3><a href="http://parkzap.com/">Parkzap Labs, Gurgaon</a><small> Internship</small></h3>
+                    <hr>
+                    <p>I contributed to Application made for the Parkzap Labs for smart parking solutions. I did the integration of NFC cards, RFID reader, custom hardware connection with android, designing advance UI for controlling the ioio board, cloud communication through efficient libraries</p>
+                    <h5><b>Technology Used</b> : JAVA, Sqlite, Ioio Board</h5>
+                    <div class="box">
+                        <!-- <span class="fa-stack fa-lg" >
 						<a href="https://github.com/ashishsurana/Alumni" target="_blank">
 			  				<i class="fa fa-github fa-stack-1x"></i>
 						</a>
 					</span> -->
-					<!-- <span class="fa-stack fa-lg" >
+                        <!-- <span class="fa-stack fa-lg" >
 						<a href="https://drive.google.com/open?id=0B1VhjwFcJ03cWk5LMER4YnF5Z2M" target="_blank">
 		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
 						</a>
 					</span> -->
-				</div>
-
-			</div>
-			
-			<!-- Alumni App v1 -->
-
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
-				<img src="./assets/android.svg" style="float:right;">
-				<div class="col-lg-3 col-md-4 col-sm-3 " >
-					<img src="./assets/finalise_main_screen.jpg" class="img-responsive img-thumbnail">
-				</div>
-
-					<h3>Arya Alumni App v-1<small> </small></h3>
-					<hr>
-					<p>An Application made for the College, dedicated to the Alumni, where they can see their friends and  get to know about the recent college activities.</p>
-					<h5><b>Technology Used</b> : JAVA, MySql , nodejs + mongodb</h5>
-				<div class="box">
-					<span class="fa-stack fa-lg" >
+                    </div>
+                </div>
+                <!-- Alumni App v1 -->
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+                    <img src="./assets/android.svg" style="float:right;">
+                    <div class="col-lg-3 col-md-4 col-sm-3 ">
+                        <img src="./assets/finalise_main_screen.jpg" class="img-responsive img-thumbnail">
+                    </div>
+                    <h3>Arya Alumni App v-1<small> </small></h3>
+                    <hr>
+                    <p>An Application made for the College, dedicated to the Alumni, where they can see their friends and get to know about the recent college activities.</p>
+                    <h5><b>Technology Used</b> : JAVA, MySql , nodejs + mongodb</h5>
+                    <div class="box">
+                        <span class="fa-stack fa-lg">
 						<a href="https://github.com/ashishsurana/Alumni" target="_blank">
 			  				<i class="fa fa-github fa-stack-1x"></i>
 						</a>
 					</span>
-					<span class="fa-stack fa-lg" >
+                        <span class="fa-stack fa-lg">
 						<a href="https://drive.google.com/open?id=0B1VhjwFcJ03cWk5LMER4YnF5Z2M" target="_blank">
 		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
 						</a>
 					</span>
-				</div>
-
-			</div>
-
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
-				<img src="./assets/java.png" style="float:right;">
-				<div class="col-lg-3 col-md-4 col-sm-3 " >
-					<img src="./assets/med.png" class="img-responsive img-thumbnail">
-				</div>
-
-					<h3>Medicine Stock Management <small> November 2015</small></h3>
-					<hr>
-					<p>A desktop based application having simple UI, that maintains the stock of Shedule H1 drugs with the help of conventional Billing System.</p>
-					<h5><b>Technology Used</b> : JAVA, MySql</h5>
-				<div class="box">
-					<span class="fa-stack fa-lg" >
+                    </div>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+                    <img src="./assets/java.png" style="float:right;">
+                    <div class="col-lg-3 col-md-4 col-sm-3 ">
+                        <img src="./assets/med.png" class="img-responsive img-thumbnail">
+                    </div>
+                    <h3>Medicine Stock Management <small> November 2015</small></h3>
+                    <hr>
+                    <p>A desktop based application having simple UI, that maintains the stock of Shedule H1 drugs with the help of conventional Billing System.</p>
+                    <h5><b>Technology Used</b> : JAVA, MySql</h5>
+                    <div class="box">
+                        <span class="fa-stack fa-lg">
 						<a href="https://github.com/ashishsurana/Drug_mgmt" target="_blank">
 			  				<i class="fa fa-github fa-stack-1x"></i>
 						</a>
 					</span>
-					<span class="fa-stack fa-lg" >
+                        <span class="fa-stack fa-lg">
 						<a href="https://photos.google.com/share/AF1QipOTUSZDaFDtIky6wEZb7brNBKan2IFsDdUNgsICkFZUimvFSXD4vIqMoKi22Sq_WA/photo/AF1QipPnTCr4mX3HYQIA9snIL1qLQ5cb5Fn6Xarnk0po?key=X1V6dkhJbUVtOTBQSWs0ZGVCYjhIN2RlTm1hMWd3" target="_blank">
 		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
 						</a>
 					</span>
-				</div>
-
-			</div>
-
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1   well">
-				<img src="./assets/android.svg" style="float:right;">
-				<div class="col-lg-3 col-md-4 col-sm-3 " >
-					<img src="./assets/mini.png" class="img-responsive img-thumbnail">
-				</div>
-
-					<h3>Quick Mini-Statement <small> september 2014</small></h3>
-					<hr>
-					<p>An app that generates the mini statement of bank account from existing bank transaction text messages in our mobile phones. </p>
-					<h5><b>Technology Used</b> : JAVA, Sqlite, Android API 23</h5>
-				<div class="box">
-					<span class="fa-stack fa-lg" >
+                    </div>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1   well">
+                    <img src="./assets/android.svg" style="float:right;">
+                    <div class="col-lg-3 col-md-4 col-sm-3 ">
+                        <img src="./assets/mini.png" class="img-responsive img-thumbnail">
+                    </div>
+                    <h3>Quick Mini-Statement <small> september 2014</small></h3>
+                    <hr>
+                    <p>An app that generates the mini statement of bank account from existing bank transaction text messages in our mobile phones. </p>
+                    <h5><b>Technology Used</b> : JAVA, Sqlite, Android API 23</h5>
+                    <div class="box">
+                        <span class="fa-stack fa-lg">
 						<a href="https://github.com/ashishsurana/mini-statement" target="_blank">
 			  				<i class="fa fa-github fa-stack-1x"></i>
 						</a>
 					</span>
-					<span class="fa-stack fa-lg" >
+                        <span class="fa-stack fa-lg">
 						<a href="https://photos.google.com/share/AF1QipNLef5O0FJkrS8ylWcLRCRgtNpdQvw40megNVrlc7exjjk1W-NVbB8beg0s5_6UhA/photo/AF1QipORzmEDcHpFjoizRSJdDY1wzu-1QlWYRoRJSO9u?key=d2U4cW9yY2IyejVaTl9lZTFlelpGWkJXWVlreTB3" target="_blank">
 		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
 						</a>
 					</span>
-				</div>
-			</div>
-
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1   well">
-				<img src="./assets/java.png" style="float:right;">
-				<div class="col-lg-3 col-md-4 col-sm-3 " >
-					<img src="./assets/payroll.png" class="img-responsive img-thumbnail">
-				</div>
-
-					<h3>Payroll Management <small> May 2015</small></h3>
-					<hr>
-					<p>A payroll Management application as a part of Computer Aided Software Engineering lab project in college curricular.</p>
-					<h5><b>Technology Used</b> : JAVA, MySql</h5>
-				<div class="box">
-					<span class="fa-stack fa-lg" >
+                    </div>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1   well">
+                    <img src="./assets/java.png" style="float:right;">
+                    <div class="col-lg-3 col-md-4 col-sm-3 ">
+                        <img src="./assets/payroll.png" class="img-responsive img-thumbnail">
+                    </div>
+                    <h3>Payroll Management <small> May 2015</small></h3>
+                    <hr>
+                    <p>A payroll Management application as a part of Computer Aided Software Engineering lab project in college curricular.</p>
+                    <h5><b>Technology Used</b> : JAVA, MySql</h5>
+                    <div class="box">
+                        <span class="fa-stack fa-lg">
 						<a href="https://github.com/ashishsurana/Payroll" target="_blank">
 			  				<i class="fa fa-github fa-stack-1x"></i>
 						</a>
 					</span>
-					<span class="fa-stack fa-lg" >
+                        <span class="fa-stack fa-lg">
 						<a href="https://photos.google.com/share/AF1QipMuW--Sxh0IXXTwUXwfZFNX4O1p0WjTCNvhsd4wsbfLFQ8ev57h9zi4RYRGzBLhTA/photo/AF1QipNVnGrPm3knbc8yqTO-17XSQ7Z5FJPaqLoKpvX_?key=THRPeWg2Qll0d3kyV2R0Yko2X1dPZkNkRkl5eDRR" target="_blank">
 		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
 						</a>
 					</span>
-				</div>
-			</div>
-
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1   well">
-				<img src="./assets/web.png" style="float:right;z-index=-1;">
-				<div class="col-lg-3 col-md-4 col-sm-3 " >
-					<img src="./assets/epilepsy.png" class="img-responsive img-thumbnail project-icon">
-				</div>
-
-					<h3 ><a href="http://pragyaepilepsycare.in" target="_blank">pragyaepilepsycare.in</a><small> January - March, 2015</small></h3>
-					<hr>
-					<p>A static website for an NGO that is serving for epilepsy in rural area from last 36 years.</p>
-					<h5><b>Technology Used</b> : HTML, CSS, JavaScript</h5>
-				<div class="box">
-					<span class="fa-stack fa-lg" >
+                    </div>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1   well">
+                    <img src="./assets/web.png" style="float:right;z-index=-1;">
+                    <div class="col-lg-3 col-md-4 col-sm-3 ">
+                        <img src="./assets/epilepsy.png" class="img-responsive img-thumbnail project-icon">
+                    </div>
+                    <h3><a href="http://pragyaepilepsycare.in" target="_blank">pragyaepilepsycare.in</a><small> January - March, 2015</small></h3>
+                    <hr>
+                    <p>A static website for an NGO that is serving for epilepsy in rural area from last 36 years.</p>
+                    <h5><b>Technology Used</b> : HTML, CSS, JavaScript</h5>
+                    <div class="box">
+                        <span class="fa-stack fa-lg">
 						<a href="https://github.com/ashishsurana/epilepsy" target="_blank">
 			  				<i class="fa fa-github fa-stack-1x"></i>
 						</a>
 					</span>
-					<span class="fa-stack fa-lg" >
+                        <span class="fa-stack fa-lg">
 						<a href="https://photos.google.com/share/AF1QipP-7bLrxiHa0khvC4jff1zBmhoHhkHL1ZaZ3v1Vs7Xr-h5gelKiy_DJBoovmEQSxw/photo/AF1QipOC2rYBdWm7W8IHLHCez4T-CJ92sXqWU_fkoFSg?key=ZDN5Rk9EczFqV21ieUo5eWM0djhEQ3pkdzV1Qkl3" target="_blank">
 		  					<i class="fa fa-picture-o fa-stack-1x	"></i>
 						</a>
 					</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="contact">
-		<h3 class="heading">Contact</h3>
-		<hr>
-		<div class="row">
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
-				<h4><i class="fa fa-phone fa-1x"></i> : +91 9784 878727</h4>
-				<h4><i class="fa fa-envelope fa-1x"></i> :ashishsurana12345@gmail.com </h4>
-				<hr>
-
-
-					<div style="text-align:center;">
-						<span class="fa-stack fa-lg">
-			  				<a href="https://twitter.com/ashishsurana1" target="_blank">
-		  					<i class="fa fa-twitter fa-stack-1x"></i>
-			  				</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h3 class="heading">Contact</h3>
+            <hr>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well">
+                    <h4><i class="fa fa-phone fa-1x"></i> : +91 9784 878727</h4>
+                    <h4><i class="fa fa-envelope fa-1x"></i> :ashishsurana12345@gmail.com </h4>
+                    <hr>
+                    <div style="text-align:center;">
+                        <span class="fa-stack fa-lg">
+		  						<a href="https://github.com/ashishsurana" target="_blank">
+		  					<i class="fa fa-github fa-stack-1x"></i>
+		  						</a>
 						</span>
-
-						<span class="fa-stack fa-lg" >
-							<a href="https://www.facebook.com/ashish.surana1" target="_blank">
-
-		  					<i class="fa fa-facebook fa-stack-1x"></i>
-							</a>
-						</span>
-
-						<span class="fa-stack fa-lg" >
-		  					<a href="http://stackoverflow.com/users/3950481/ashish-surana" target="_blank">
-		  					<i class="fa fa-stack-overflow fa-stack-1x"></i>
-		  					</a>
-						</span>
-
-			  			<span class="fa-stack fa-lg">
+                        <span class="fa-stack fa-lg">
 			  				<a href="https://in.linkedin.com/in/ashishsurana1" target="_blank">
 
 		  					<i class="fa fa-linkedin fa-stack-1x"></i>
 
 			  				</a>
 						</span>
-
-						<span class="fa-stack fa-lg">
-		  						<a href="https://github.com/ashishsurana" target="_blank">
-		  					<i class="fa fa-github fa-stack-1x"></i>
-		  						</a>
+                        <span class="fa-stack fa-lg">
+			  				<a href="https://twitter.com/ashishsurana1" target="_blank">
+		  					<i class="fa fa-twitter fa-stack-1x"></i>
+			  				</a>
 						</span>
+                        <span class="fa-stack fa-lg">
+							<a href="https://www.facebook.com/ashish.surana1" target="_blank">
 
-						<span class="fa-stack fa-lg">
+		  					<i class="fa fa-facebook fa-stack-1x"></i>
+							</a>
+						</span>
+                        <span class="fa-stack fa-lg">
+		  					<a href="http://stackoverflow.com/users/3950481/ashish-surana" target="_blank">
+		  					<i class="fa fa-stack-overflow fa-stack-1x"></i>
+		  					</a>
+						</span>
+                        <!-- 						<span class="fa-stack fa-lg">
 		  					<a href="https://plus.google.com/u/0/+ashishsurana1" target="_blank">
 		  					<i class="fa fa-google fa-stack-1x"></i>
 		  					</a>
-						</span>
-
-						<span class="fa-stack fa-lg">
+						</span> -->
+                        <span class="fa-stack fa-lg">
 		  					<a href="https://instagram.com/ashishsurana1/" target="_blank">
 		  					<i class="fa fa-instagram fa-stack-1x"></i>
 		  					</a>
 						</span>
-					</div>
-			</div>
-		</div>
-	</div>
-	<div class="resume">
-		<h3 class="heading">Resume</h3>
-		<hr>
-		<div class="row">
-
-			<div class="col-lg-10 col-md-10  col-sm-10 col-sm-offset-1  well " style="text-align:center;">
-
-				<div class="hidden-xs">
-					<embed src="./Resume.pdf" width="90%" height="1100px">
-				</div>
-				<div style="margin :auto;text-align: center;" class="visible-xs">
-					<span class="fa fa-lg icons col-lg-1 	">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume">
+            <h3 class="heading">Resume</h3>
+            <hr>
+            <div class="row">
+                <div class="col-lg-10 col-md-10  col-sm-10 col-sm-offset-1  well " style="text-align:center;">
+                    <div class="hidden-xs">
+                        <embed src="./Resume.pdf" width="90%" height="1100px">
+                    </div>
+                    <div style="margin :auto;text-align: center;" class="visible-xs">
+                        <span class="fa fa-lg icons col-lg-1 	">
 	  					<a href="./Resume.pdf" target="_blank">
 	  						<i class="fa fa-file-pdf-o fa-3x"></i>
 	  					</a>
 					</span>
-					<span class="fa fa-lg icons col-lg-1 ">
+                        <span class="fa fa-lg icons col-lg-1 ">
 	  					<a href="./Resume.pdf" download="ashishsurana_resume.pdf">
 	  						<i class="fa fa-download fa-3x"></i>
 	  					</a>
 					</span>
-				</div>
-			</div>
-	</div>
-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>
