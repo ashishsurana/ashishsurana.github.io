@@ -54,8 +54,11 @@ h3 ,h4,  li, .navbar {
 }
 
 .navbar {
-font-size: 16px;
- font-family: "Kimberley", sans-serif; } 
+	font-size: 16px;
+ 	font-family: "Kimberley", sans-serif;
+	 color: #a1dec6;
+} 
+
 @font-face {
   font-family: "Kimberle";
   src: url(./fonts/Md_Gothic11.ttf) format("truetype");
@@ -64,6 +67,7 @@ font-size: 16px;
 	letter-spacing: 2px;
 	font-size: 20px;
 	font-family: "Kimberle",serif; 
+	color: #40B58A
 }
 @font-face {
 	font-family:  "ubuntu";
