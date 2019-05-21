@@ -21,21 +21,21 @@ module.exports = module.exports.toString();
 /***/ 152:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"home\">\n    <div class=\"row\t\">\n        <div class=\"col-md-3 col-md-offset-2 text-center col-sm-4  col-xs-12 content \">\n            <img [src]=\"LOGO\" class=\"profilepic img-thumbnail \">\n        </div>\n        <div class=\"col-md-5 col-sm-8  col-xs-12 content\">\n            <p>I'm a Computer Science Engineer, graduated from <a href=\"http://www.aryacollege.in/\">Arya College of Engineering & IT</a>.\n                The thirst of exploring things and curiosity defines me well.</p>\n            <p> I'm a geek who loves learning new technologies and their deployment. I'm a Firefox Student Ambassador, Open Source\n                Enthusiast and a part of open sour-ce communities like Mozilla Community Rajasthan, OpenMoz, Google Student\n                Club and delivered several tech talks and workshops. My hobbies are traveling and Photography.\n            </p>\n            <p>I maintain this page as a documentation of my work.</p>\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"home\">\n    <div class=\"row\t\">\n        <div class=\"col-md-3 col-md-offset-2 text-center col-sm-4  col-xs-12 content \">\n            <img [src]=\"LOGO\" class=\"profilepic img-thumbnail \">\n        </div>\n        <div class=\"col-md-5 col-sm-8  col-xs-12 content\">\n            <p>Hey,</p>\n            <p>\n                I am a Software Development Engineer with 2 years of experience in Frontend Development and Javascript.\n                Currently working as a Frontend Developer at <a href=\"http://www.innovaccer.com/\">Innovaccer</a>, a healthcare startup.\n                The challenges of scaling and improving UI is my motivation for learning new things.\n                I’m dedicated to focus on UX and writing clean, modular code.\n            </p>\n            <p>Being an Open Source Enthusiast, I have also contributed to <a href=\"https://verdaccio.org\">Verdaccio</a> (npm proxy registry). \n                <a href=\"http://ashishsurana.in/Resume.pdf\">Here</a> is my Resume that contains details of all interesting work I have done.\n                <!-- I maintain this page as a documentation of my work. -->\n            </p>\n            <!-- <div style=\"margin-top: 36px;\">\n                <h4>Links-</h4>\n                <div style=\"text-align:center;\">\n                    <span *ngFor=\"let contact of contacts\" class=\"fa-stack fa-lg\">\n                        <a [href]=\"contact.url\" target=\"_blank\">\n                            <i class=\"fa fa-stack-1x\" [ngClass]=\"contact.class\"></i>\n                        </a>\n                    </span>\n                </div>\n            </div> -->\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
 /***/ 153:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default\" role=\"navigation\">\n    <div class=\"navbar-header\">\n        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#example-navbar-collapse\">\n            <span class=\"sr-only\"></span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n        </button>\n        <a class=\"navbar-brand\" routerLink=\"/about\" routerLinkActive=\"active\" >ASHISH SURANA</a>\n    </div>\n    <div class=\"collapse navbar-collapse\" id=\"example-navbar-collapse\">\n        <ul class=\"nav navbar-nav navbar-right hidden-xs\">\n            <li><a href=\"https://github.com/ashishsurana/ashishsurana.github.io\" target=\"_blank\"><i class=\"fa fa-github-alt  \"></i></a></li>\n        </ul>\n        <ul class=\"nav navbar-nav\">\n            <li><a routerLink=\"/about\" routerLinkActive=\"active\" style=\"color:#40B58A;\">ABOUT</a></li>\n            <li><a routerLink=\"/skills\" routerLinkActive=\"active\" style=\"color:#40B58A;\">SKILLS</a></li>\n            <li><a routerLink=\"/projects\" routerLinkActive=\"active\" style=\"color:#40B58A;\">PROJECTS</a></li>\n            <li><a routerLink=\"/resume\" routerLinkActive=\"active\" style=\"color:#40B58A;\">RESUME</a></li>\n            <li><a routerLink=\"/contact\" routerLinkActive=\"active\" style=\"color:#40B58A;\">CONTACT</a></li>\n        </ul>\n    </div>\n</nav>\n<div class=\"container\">\n    <router-outlet></router-outlet>\n</div>"
+module.exports = "<nav class=\"navbar navbar-default\" role=\"navigation\">\n    <div class=\"navbar-header\">\n        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#example-navbar-collapse\">\n            <span class=\"sr-only\"></span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n        </button>\n        <a class=\"navbar-brand\" routerLink=\"/about\" routerLinkActive=\"active\" >ASHISH SURANA</a>\n    </div>\n    <div class=\"collapse navbar-collapse\" id=\"example-navbar-collapse\">\n        <ul class=\"nav navbar-nav navbar-right hidden-xs\">\n            <li><a href=\"https://github.com/ashishsurana/ashishsurana.github.io\" target=\"_blank\"><i class=\"fa fa-github-alt  \"></i></a></li>\n        </ul>\n        <ul class=\"nav navbar-nav\">\n            <li><a routerLink=\"/about\" routerLinkActive=\"active\" style=\"color:#40B58A;\">ABOUT</a></li>\n            <!-- <li><a routerLink=\"/skills\" routerLinkActive=\"active\" style=\"color:#40B58A;\">SKILLS</a></li> -->\n            <li><a routerLink=\"/projects\" routerLinkActive=\"active\" style=\"color:#40B58A;\">PROJECTS</a></li>\n            <li><a routerLink=\"/resume\" routerLinkActive=\"active\" style=\"color:#40B58A;\">RESUME</a></li>\n            <li><a routerLink=\"/contact\" routerLinkActive=\"active\" style=\"color:#40B58A;\">CONTACT</a></li>\n        </ul>\n    </div>\n</nav>\n<div class=\"container\">\n    <router-outlet></router-outlet>\n</div>"
 
 /***/ }),
 
 /***/ 154:
 /***/ (function(module, exports) {
 
-module.exports = "        <div class=\"contact\">\n            <h3 class=\"heading\">Contact</h3>\n            <hr>\n            <div class=\"row\">\n                <div class=\"col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well\">\n                    <h4><i class=\"fa fa-phone fa-1x\"></i> : +91 9784 878727</h4>\n                    <h4><i class=\"fa fa-envelope fa-1x\"></i> :ashishsurana12345@gmail.com </h4>\n                    <hr>\n                    <div style=\"text-align:center;\">\n                        <span *ngFor=\"let contact of contacts\" class=\"fa-stack fa-lg\">\n\t\t  \t\t\t\t\t\t<a href=\"https://github.com/ashishsurana\" target=\"_blank\">\n\t\t  \t\t\t\t\t<i class=\"fa fa-stack-1x\" [ngClass]=\"contact.class\"></i>\n\t\t  \t\t\t\t\t\t</a>\n\t\t\t\t\t\t</span>\n                    </div>\n                </div>\n            </div>\n        </div>\n"
+module.exports = "        <div class=\"contact\">\n            <h3 class=\"heading\">Contact</h3>\n            <hr>\n            <div class=\"row\">\n                <div class=\"col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 well\">\n                    <h4><i class=\"fa fa-phone fa-1x\"></i> : (+91) 9784-878727</h4>\n                    <h4><i class=\"fa fa-envelope fa-1x\"></i> : ashishsurana.in@gmail.com </h4>\n                    <hr>\n                    <div style=\"text-align:center;\">\n                        <span *ngFor=\"let contact of contacts\" class=\"fa-stack fa-lg\">\n                            <a [href]=\"contact.url\" target=\"_blank\">\n                                <i class=\"fa fa-stack-1x\" [ngClass]=\"contact.class\"></i>\n                            </a>\n\t\t\t\t\t\t</span>\n                    </div>\n                </div>\n            </div>\n        </div>\n"
 
 /***/ }),
 
@@ -49,7 +49,7 @@ module.exports = "<div class=\"project\">\n    <h3 class=\"heading\">Projects</h
 /***/ 156:
 /***/ (function(module, exports) {
 
-module.exports = "        <div class=\"resume\">\n            <h3 class=\"heading\">Resume</h3>\n            <hr>\n            <div class=\"row\">\n                <div class=\"col-lg-10 col-md-10  col-sm-10 col-sm-offset-1  well \" style=\"text-align:center;\">\n                    <div class=\"hidden-xs\">\n                        <embed [src]=\"path\" width=\"90%\" height=\"750px\">\n                    </div>\n                    <div style=\"margin :auto;text-align: center;\" class=\"visible-xs\">\n                        <span class=\"fa fa-lg icons col-lg-1 \t\">\n\t  \t\t\t\t\t<a [href]=\"path\" target=\"_blank\">\n\t  \t\t\t\t\t\t<i class=\"fa fa-file-pdf-o fa-3x\"></i>\n\t  \t\t\t\t\t</a>\n\t\t\t\t\t</span>\n                        <span class=\"fa fa-lg icons col-lg-1 \">\n\t  \t\t\t\t\t<a [href]=\"path\" download=\"ashishsurana_resume.pdf\">\n\t  \t\t\t\t\t\t<i class=\"fa fa-download fa-3x\"></i>\n\t  \t\t\t\t\t</a>\n\t\t\t\t\t</span>\n                    </div>\n                </div>\n            </div>\n        </div>\n"
+module.exports = "        <div class=\"resume\">\n            <h3 class=\"heading\">Resume</h3>\n            <hr>\n            <div class=\"row\">\n                <div class=\"col-lg-10 col-md-10  col-sm-10 col-sm-offset-1  well \" style=\"text-align:center;\">\n                    <div class=\"hidden-xs\">\n                        <embed [src]=\"path\" width=\"86%\" height=\"750px\">\n                    </div>\n                    <div style=\"margin :auto;text-align: center;\" class=\"visible-xs\">\n                        <span class=\"fa fa-lg icons col-lg-1 \t\">\n\t  \t\t\t\t\t<a [href]=\"path\" target=\"_blank\">\n\t  \t\t\t\t\t\t<i class=\"fa fa-file-pdf-o fa-3x\"></i>\n\t  \t\t\t\t\t</a>\n\t\t\t\t\t</span>\n                        <span class=\"fa fa-lg icons col-lg-1 \">\n\t  \t\t\t\t\t<a [href]=\"path\" download=\"Ashish_Surana_Resume.pdf\">\n\t  \t\t\t\t\t\t<i class=\"fa fa-download fa-3x\"></i>\n\t  \t\t\t\t\t</a>\n\t\t\t\t\t</span>\n                    </div>\n                </div>\n            </div>\n        </div>\n"
 
 /***/ }),
 
@@ -123,6 +123,33 @@ var AboutComponent = (function () {
     function AboutComponent() {
         this.name = 'Angular';
         this.LOGO = "";
+        this.contacts = [
+            {
+                class: "fa-github",
+                url: "htp://github.com/ashishsurana/"
+            }, {
+                class: "fa-linkedin",
+                url: "https://in.linkedin.com/in/ashishsurana1"
+            }, {
+                //   class : "fa-skype",
+                //   url : "ashish.surana1"
+                // },{
+                class: "fa-twitter",
+                url: "https://twitter.com/ashishsurana1"
+            }, {
+                //   class : "fa-facebook",
+                //   url : "https://facebook.com/ashish.surana1"
+                // },{
+                class: "fa-stack-overflow ",
+                url: "http://stackoverflow.com/users/3950481/ashish-surana"
+            }, {
+                //   class : "fa-instagram",
+                //   url : "https://instagram.com/ashishsurana1/"
+                // },{
+                class: "fa-envelope-o",
+                url: "mailto:ashishsurana.in@gmail.com"
+            }
+        ];
         this.LOGO = 'assets/pic.png';
     }
     ;
@@ -265,20 +292,23 @@ var ContactComponent = (function () {
                 class: "fa-linkedin",
                 url: "https://in.linkedin.com/in/ashishsurana1"
             }, {
-                class: "fa-skype",
-                url: "ashish.surana1"
-            }, {
+                //   class : "fa-skype",
+                //   url : "ashish.surana1"
+                // },{
                 class: "fa-twitter",
-                url: "htp://twitter.com/ashishsurana1"
+                url: "https://twitter.com/ashishsurana1"
             }, {
-                class: "fa-facebook",
-                url: "htp://facebook.com/ashish.surana1"
-            }, {
+                //   class : "fa-facebook",
+                //   url : "https://facebook.com/ashish.surana1"
+                // },{
                 class: "fa-stack-overflow ",
                 url: "http://stackoverflow.com/users/3950481/ashish-surana"
             }, {
-                class: "fa-instagram",
-                url: "https://instagram.com/ashishsurana1/"
+                //   class : "fa-instagram",
+                //   url : "https://instagram.com/ashishsurana1/"
+                // },{
+                class: "fa-envelope-o",
+                url: "mailto:ashishsurana.in@gmail.com"
             }
         ];
     }
